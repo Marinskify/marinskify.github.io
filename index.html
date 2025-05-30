@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Марина Александрова – визуален артист</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #fff; color: #111; }
+    header, nav, section, footer { padding: 1rem 2rem; }
+    nav a { margin-right: 1rem; text-decoration: none; color: #333; }
+    h1, h2 { font-weight: normal; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding-top: 1rem;
+    }
+    .gallery img { width: 100%; height: auto; object-fit: cover; border: 1px solid #ccc; }
+    .lang-switch { float: right; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="lang-switch">
+      <a href="#" onclick="switchLang('en')">EN</a> | <a href="#" onclick="switchLang('bg')">BG</a>
+    </div>
+    <h1>Марина Александрова – визуален артист</h1>
+  </header>
+
+  <nav>
+    <a href="#about">За автора</a>
+    <a href="#gallery">Галерия</a>
+    <a href="#blog">Блог</a>
+  </nav>
+
+  <section id="about">
+    <h2>За автора</h2>
+    <p>Марина Александрова е родена в гр. София, през 1987. Тя е визуален артист, който работи в различни области на визуалните изкуства, като живописта заема централно място в работата ѝ...</p>
+    <h2>About</h2>
+    <p>Marina Alexandrova was born in Sofia, Bulgaria, in 1987. She is a visual artist working across various areas of the visual arts, with painting taking a central role...</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Галерия / Gallery</h2>
+    <p><strong>Germination</strong><br>
+    Painting exhibition in Alma Mater Gallery, Sofia University “St. Kliment Ohridski”</p>
+    <p>“Germination” explores the artistic content and sculptural form of a process, as seen through its dynamics, color, and mood...</p>
+    <div class="gallery">
+      <img src="art1.jpg" alt="Art 1" />
+      <img src="art2.jpg" alt="Art 2" />
+      <img src="art3.jpg" alt="Art 3" />
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Блог / Blog</h2>
+    <p>Очаквайте нови публикации скоро.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Марина Александрова</p>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.body.lang = lang;
+      alert("Language switch not yet implemented");
+    }
+  </script>
+</body>
+</html>
